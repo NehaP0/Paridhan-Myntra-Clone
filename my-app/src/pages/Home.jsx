@@ -36,7 +36,7 @@ const nextSlide = ()=>{
 
 const fetchPicks=()=>{
   SetLoading(true)
-  axios.get('http://localhost:8080/topPicks')
+  axios.get('https://periwinkle-indri-wear.cyclic.app/topPicks')
   .then((res)=>setPicks(res.data))
   .catch((err)=>console.log(err))
   .finally(()=>SetLoading(false))
@@ -44,7 +44,7 @@ const fetchPicks=()=>{
 
 const fetchBags1=()=>{
   SetLoading(true)
-  axios.get('http://localhost:8080/Bags1')
+  axios.get('https://periwinkle-indri-wear.cyclic.app/Bags1')
   .then((res)=>setBagCategories1(res.data))
   .catch((err)=>console.log(err))
   .finally(()=>SetLoading(false))
@@ -52,7 +52,7 @@ const fetchBags1=()=>{
 
 const fetchBags2=()=>{
   SetLoading(true)
-  axios.get('http://localhost:8080/Bags2')
+  axios.get('https://periwinkle-indri-wear.cyclic.app/Bags2')
   .then((res)=>setBagCategories2(res.data))
   .catch((err)=>console.log(err))
   .finally(()=>SetLoading(false))
@@ -60,7 +60,7 @@ const fetchBags2=()=>{
 
 const fetchBags3=()=>{
   SetLoading(true)
-  axios.get('http://localhost:8080/Bags3')
+  axios.get('https://periwinkle-indri-wear.cyclic.app/Bags3')
   .then((res)=>setBagCategories3(res.data))
   .catch((err)=>console.log(err))
   .finally(()=>SetLoading(false))

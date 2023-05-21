@@ -46,22 +46,22 @@ const OneKurta = () => {
     <div>
     <div style={{display:"flex", width:"80%", margin:"auto"}}>
         <div style={{width:"60%"}}>
-            <img src={dataObj.image} alt="image" />
+            <img src={dataObj.image} alt="image" style={{width:"90%"}}/>
         </div>
-        <div style={{width:"40%", fontSize:"9px", textAlign:"left"}}>
-            <h3 style={{fontSize:"15px", fontWeight:"bold"}}>{dataObj.name}</h3>
-            <p style={{fontSize:"13px", color:"grey"}}>{dataObj.material}</p>
+        <div style={{width:"40%", fontSize:"15px", textAlign:"left"}}>
+            <h3 style={{fontSize:"18px", fontWeight:"bold"}}>{dataObj.name}</h3>
+            <p style={{fontSize:"15px", color:"grey"}}>{dataObj.material}</p>
             <br />
-            <div style={{border:"1px solid lightgrey", width:"70px"}}>{dataObj.rating} | 419 Ratings</div>
+            <div style={{border:"1px solid lightgrey", width:"50%"}}>{dataObj.rating} | 419 Ratings</div>
             <br />
             <hr />
-            <h3 style={{display:"inline",fontSize:"13px", fontWeight:"bold"}}>Rs {dataObj.price} </h3> <h3 style={{display:"inline", color:"grey",fontSize:"10px"}}>MRP</h3> <h3 style={{textDecoration: "line-through", display:"inline"}}>Rs4999</h3> <h3 style={{display:"inline", color:"#FF5722", fontWeight:"bold"}}>({dataObj.discount}% OFF)</h3>
+            <h3 style={{display:"inline",fontSize:"13px", fontWeight:"bold"}}>Rs {dataObj.price} </h3> <h3 style={{display:"inline", color:"grey",fontSize:"13px"}}>MRP</h3> <h3 style={{textDecoration: "line-through", display:"inline"}}>Rs4999</h3> <h3 style={{display:"inline", color:"#FF5722", fontWeight:"bold"}}>({dataObj.discount}% OFF)</h3>
             <br />
             <p style={{color:"darkgreen", fontWeight:"bold"}}>inclusive of all taxes</p> 
             <br />
             <hr />
 
-            <p style={{display:"inline", fontWeight:"bold"}}>SELECT SIZE</p>   <p style={{display:"inline", color:"#EC407A", fontSize:"8px"}}>SIZE CHART </p>
+            <p style={{display:"inline", fontWeight:"bold"}}>SELECT SIZE</p>   <p style={{display:"inline", color:"#EC407A", fontSize:"10px"}}>SIZE CHART </p>
             <div style={{display:"flex", margin:"auto", justifyContent:"space-between",  padding:"5px"}}>
                 <button style={{border:"1px solid grey", borderRadius:"100%", width:"30px", height:"30px"}}>S</button>
                 <button style={{border:"1px solid grey", borderRadius:"100%", width:"30px", height:"30px"}}>M</button>

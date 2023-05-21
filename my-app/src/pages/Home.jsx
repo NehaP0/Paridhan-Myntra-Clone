@@ -96,8 +96,8 @@ useEffect(()=>{
 
       <h3 style={{textAlign:"left", fontWeight:"bold", marginLeft:"15px", marginRight:"15px", marginTop:"30px",  marginBottom:"30px"}}>CATEGORIES TO BAG</h3>
       <div>
-        <div style={{display:"flex"}}>
-          {BagCategories1.map((item)=>{return(Loading?<h2 key={item.id}>Loading...</h2>:<Link to={'Kurta'}  key={item.id}  style={{display:"flex"}} ><img key={item.id} src={item.image} /></Link>)})}
+        <div style={{display:"flex"}}>          
+          {BagCategories1.map((item, index)=>{return(Loading?<h2 key={item.id}>Loading...</h2>:<Link to={'Kurta'} key={item.id}  style={{display:"flex"}} ><img key={item.id} src={item.image} /></Link>)})}
         </div>
         <div style={{display:"flex"}}>
           {BagCategories2.map((item)=>{return(Loading?<h2 key={item.id}>Loading...</h2>:<div key={item.id} style={{display:"flex"}}><img key={item.id} src={item.image}/></div>)})}

@@ -30,7 +30,7 @@ const Navbar = () => {
    
   return (
     <Flex justifyContent={'space-evenly'} style={{fontSize:"medium", fontWeight:"bold", padding:"10px", marginBottom:"50px", marginTop:"10px"}}>
-        <RouterLink key='/'  to='/'><div style={{width:"40px", height:"40px"}}><img style={{width:"100%", height:"100%"}} src={logo} alt="img" /></div></RouterLink>
+        <RouterLink key='/'  to='/'><div style={{width:"70px", height:"70px"}}><img style={{width:"100%", height:"100%"}} src={logo} alt="img" /></div></RouterLink>
         <RouterLink to='/men'>MEN</RouterLink>
         <RouterLink to='/kurta'>WOMEN</RouterLink>
         <RouterLink  to='/kids'>KIDS</RouterLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
         <RouterLink  to='Beauty'>BEAUTY</RouterLink>
         <RouterLink  to='/studio'>STUDIO</RouterLink>
         <Input placeholder='Search for products, brands and more' size='xxs' width={"200px"} height={"5px"} borderRadius padding={"10px"}/>
-        <select  onChange={(e)=>HandleChange(e)} >
+        <select  onChange={(e)=>HandleChange(e)}>
         <option value="Profile">Profile</option>
           <option value="LoginAsUser">Login As User</option>
           <option value="LoginAsAdmin">Login As Admin</option>

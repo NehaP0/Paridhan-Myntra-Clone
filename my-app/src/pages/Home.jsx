@@ -27,7 +27,7 @@ const Home = () => {
   const length = Images.length
 
   const prevSlide = ()=>{
-    SetCurrent(current === 0 ? 0 : length-1)
+    SetCurrent(current === 0 ? length-1 : current-1)
   }
 
 const nextSlide = ()=>{
@@ -82,8 +82,8 @@ useEffect(()=>{
         <FaArrowAltCircleRight onClick={nextSlide} style={{position:"absolute", top:"50%", right:"32px", fontSize:"1rem", color:"grey", zIndex:"10", cursor:"pointer", userSelect:"none"}}/>
         {Images.map((item)=> {
           return(
-            <div key = {item.id}>
-              { item.id === current && (<img src={item.imgLink} alt="image travel" width={"1000px"} height={"600px"} />)}
+            <div key = {item.id} >
+              { item.id === current && (<img src={item.imgLink} />)}
             </div>
           )
         })}

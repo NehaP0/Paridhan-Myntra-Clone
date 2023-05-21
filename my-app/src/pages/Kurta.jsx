@@ -14,7 +14,7 @@ const Kurta = () => {
     //const [Kurtas, SetKurtas] = useState([])
 
     const FetchData = ()=>{
-        axios.get(`http://localhost:8080/kurtaData`,{
+        axios.get(`https://periwinkle-indri-wear.cyclic.app/kurtaData`,{
          params:{
             _sort:"price",
             _order:SortWay

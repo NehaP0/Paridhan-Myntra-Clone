@@ -47,16 +47,16 @@ To get started with the project, you will need to clone the repository to your P
 # screenshot
 
 ## Landing Page
-<img src="" alt="Landing Page" /> 
+<img src="./my-app/src/screenshots/Home-page.PNG" alt="Landing Page" /> 
 
 ## Products Page
-<img src="" alt="Products Page" /> 
+<img src="./my-app/src/screenshots/Products-page.PNG" alt="Products Page" /> 
 
 ## Single Product Page
-<img src="" alt="Single Product Page" /> 
+<img src="./my-app/src/screenshots/Single-product-page.PNG" alt="Single Product Page" /> 
 
 ## Cart Page
-<img src="" alt="Cart Page" /> 
+<img src="./my-app/src/screenshots/Cart-page.PNG" alt="Cart Page" /> 
 
 
 

@@ -13,7 +13,7 @@ const OneKurta = () => {
    
 
     useEffect(()=>{
-        axios.get(`https://periwinkle-indri-wear.cyclic.app/kurtaData/${id}`)
+        axios.get(`https://indigo-crane-robe.cyclic.app/kurtaData/${id}`)
         .then((res)=>SetdataObj(res.data))
         .catch((err)=>console.log(err))
     },[])

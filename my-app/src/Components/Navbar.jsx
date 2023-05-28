@@ -29,7 +29,7 @@ const Navbar = () => {
   }
    
   return (
-    <Flex justifyContent={'space-evenly'} style={{fontSize:"medium", fontWeight:"bold", padding:"10px", marginBottom:"50px", marginTop:"10px"}}>
+    <Flex justifyContent={'space-evenly'} style={{fontSize:"medium", fontWeight:"bold", padding:"10px", marginBottom:"50px", marginTop:"10px", color:"pink"}}>
         <RouterLink key='/'  to='/'><div style={{width:"70px", height:"70px"}}><img style={{width:"100%", height:"100%"}} src={logo} alt="img" /></div></RouterLink>
         <RouterLink to='/men'>MEN</RouterLink>
         <RouterLink to='/kurta'>WOMEN</RouterLink>

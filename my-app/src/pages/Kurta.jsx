@@ -11,7 +11,7 @@ const Kurta = () => {
     const [Loading, SetLoading] = useState(false)
     const {Kurtas, SetKurtas} = useContext(AuthContext)
     const [SortWay, SetSortWay ]=useState("")
-    const [url, Seturl] = useState(`https://periwinkle-indri-wear.cyclic.app/kurtaData`)
+    const [url, Seturl] = useState(`https://indigo-crane-robe.cyclic.app/kurtaData`)
     //const [Kurtas, SetKurtas] = useState([])
 
     const FetchData = ()=>{
@@ -31,23 +31,23 @@ const Kurta = () => {
     },[SortWay,url])
 
     const HandleBrand = (e)=>{
-        Seturl(`https://periwinkle-indri-wear.cyclic.app/kurtaData?name=${e.target.value}`)
+        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
     }
 
     const HandleRating = (e)=>{
-        Seturl(`https://periwinkle-indri-wear.cyclic.app/kurtaData?rating=${e.target.value}`)
+        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=${e.target.value}`)
     }
 
     const HandleDiscount = (e)=>{
-        Seturl(`https://periwinkle-indri-wear.cyclic.app/kurtaData?name=${e.target.value}`)
+        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
     }
 
     const HandlePrice = (e)=>{
-        Seturl(`https://periwinkle-indri-wear.cyclic.app/kurtaData?name=${e.target.value}`)
+        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
     }
 
     const HandleType = (e)=>{
-        Seturl(`https://periwinkle-indri-wear.cyclic.app/kurtaData?name=${e.target.value}`)
+        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
     }
 
   return (

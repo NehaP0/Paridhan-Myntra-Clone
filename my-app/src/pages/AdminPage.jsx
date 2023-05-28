@@ -33,7 +33,7 @@ const AdminPage = () => {
 
  // {"id": 1,"image":"","rating":4.2,"name":"SINGNI","material":"Women Embroidered Kurta Set", "price":1499, "discount":70},
      const FetchData = ()=>{
-        axios.get('https://periwinkle-indri-wear.cyclic.app/kurtaData')
+        axios.get('https://indigo-crane-robe.cyclic.app/kurtaData')
         .then((res)=>SetKurtas(res.data))
         .catch((err)=>console.log(err))
         //.finally(()=>SetLoading(false))
@@ -47,7 +47,7 @@ const AdminPage = () => {
    const DeleteKurta = (id)=>{
     axios({
         method:"delete",
-        url: `https://periwinkle-indri-wear.cyclic.app/kurtaData/${id}`
+        url: `https://indigo-crane-robe.cyclic.app/kurtaData/${id}`
       })
       .then(()=>FetchData())
       .catch((err)=>console.log(err))
@@ -72,7 +72,7 @@ const PostProdRequest = ()=>{
     console.log("works")
     axios({
       method:"post",
-      url:'https://periwinkle-indri-wear.cyclic.app/kurtaData',
+      url:'https://indigo-crane-robe.cyclic.app/kurtaData',
       data: NewKurtaDetails
     })
     .then(()=>FetchData())

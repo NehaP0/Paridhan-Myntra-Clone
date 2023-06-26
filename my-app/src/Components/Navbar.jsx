@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const HandleChange = (e)=>{
     if(e.target.value === "LoginAsUser"){
-      navigate('/login')
+      navigate('/signup')
     }
     else if(e.target.value === "LoginAsAdmin"){      
       navigate('/admin')
@@ -29,18 +29,18 @@ const Navbar = () => {
   }
    
   return (
-    <Flex justifyContent={'space-evenly'} style={{fontSize:"medium", fontWeight:"bold", padding:"10px", marginBottom:"50px", marginTop:"10px", color:"pink"}}>
+    <Flex justifyContent={'space-evenly'} style={{fontSize:"medium", fontWeight:"bold", padding:"10px", marginBottom:"50px", marginTop:"10px"}}>
         <RouterLink key='/'  to='/'><div style={{width:"70px", height:"70px"}}><img style={{width:"100%", height:"100%"}} src={logo} alt="img" /></div></RouterLink>
-        <RouterLink to='/men'>MEN</RouterLink>
         <RouterLink to='/kurta'>WOMEN</RouterLink>
+        <RouterLink to='/men'>MEN</RouterLink>
         <RouterLink  to='/kids'>KIDS</RouterLink>
         <RouterLink  to='/homeandliving'>HOME AND LIVING</RouterLink>
         <RouterLink  to='Beauty'>BEAUTY</RouterLink>
         <RouterLink  to='/studio'>STUDIO</RouterLink>
         <Input placeholder='Search for products, brands and more' size='xxs' width={"200px"} height={"5px"} borderRadius padding={"10px"}/>
         <select  onChange={(e)=>HandleChange(e)}>
-        <option value="Profile">Profile</option>
-          <option value="LoginAsUser">Login As User</option>
+          <option value="Profile">Profile</option>
+          <option value="LoginAsUser">SignUp/Login As User</option>
           <option value="LoginAsAdmin">Login As Admin</option>
         </select>
         <RouterLink  to='/wishlist'>Wishlist</RouterLink>

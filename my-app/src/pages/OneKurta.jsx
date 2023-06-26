@@ -46,7 +46,7 @@ const OneKurta = () => {
     <div>
     <div style={{display:"flex", width:"80%", margin:"auto"}}>
         <div style={{width:"60%"}}>
-            <img src={dataObj.image} alt="image" style={{width:"90%"}}/>
+            <img src={dataObj.image} alt="data" style={{width:"90%"}}/>
         </div>
         <div style={{width:"40%", fontSize:"15px", textAlign:"left"}}>
             <h3 style={{fontSize:"18px", fontWeight:"bold"}}>{dataObj.name}</h3>

@@ -139,7 +139,7 @@
       "name": "SINGNI",
       "material": "Women Embroidered Kurta Set",
       "price": 1499,
-      "discount": 70
+      "discount": 60
     },
     {
       "id": 2,
@@ -148,7 +148,7 @@
       "name": "KALINI",
       "material": "Women Yoke Design Kurta Set",
       "price": 887,
-      "discount": 76
+      "discount": 60
     },
     {
       "id": 3,
@@ -166,7 +166,7 @@
       "name": "Ahalya",
       "material": "Women Printed Kurta with Palazzo & With Dupatta",
       "price": 1260,
-      "discount": 79
+      "discount": 70
     },
     {
       "id": 5,
@@ -175,7 +175,7 @@
       "name": "KALINI",
       "material": "Women Printed Kurta with Trouser",
       "price": 874,
-      "discount": 75
+      "discount": 70
     },
     {
       "id": 6,
@@ -184,7 +184,7 @@
       "name": "Kushal K",
       "material": "Women Kurta Set With Dupatta",
       "price": 1427,
-      "discount": 72
+      "discount": 70
     },
     {
       "id": 7,

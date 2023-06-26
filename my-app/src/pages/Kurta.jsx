@@ -35,20 +35,64 @@ const Kurta = () => {
     }
 
     const HandleRating = (e)=>{
-        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=${e.target.value}`)
+        if(e.target.value==1){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=1&&rating=2&&rating=3&&rating=4&&rating=5`)
+        }
+        else if(e.target.value==2){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=2&&rating=3&&rating=4&&rating=5`)
+        }
+        else if(e.target.value==3){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=3&&rating=4&&rating=5`)
+        }
+        else if(e.target.value==4){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=4&&rating=5`)
+        }
+        else if(e.target.value==5){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?rating=5`)
+        }
     }
 
     const HandleDiscount = (e)=>{
-        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
-    }
-
-    const HandlePrice = (e)=>{
-        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
+        // console.log(e.target.value);
+        if(e.target.value==20){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?discount=20&&discount=40&&discount=60&&discount=80&&discount=90`)
+        }
+        else if(e.target.value==40){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?discount=40&&discount=60&&discount=80&&discount=90`)
+        }
+        else if(e.target.value==60){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?discount=60&&discount=80&&discount=90`)
+        }
+        else if(e.target.value==80){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?discount=80&&discount=90`)
+        }
+        else if(e.target.value==90){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?discount=90`)
+        }
     }
 
     const HandleType = (e)=>{
-        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?name=${e.target.value}`)
+        Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?material=${e.target.value}`)
     }
+
+    const HandlePrice = (e)=>{
+        if(e.target.value==500){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?price=500&&price=600&&price=700&&price=800&&price=900`)
+        }
+        else if(e.target.value==600){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?price=600&&price=700&&price=800&&price=900`)
+        }
+        else if(e.target.value==700){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?price=700&&&price=800&&price=900`)
+        }
+        else if(e.target.value==800){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?price=800&&price=900`)
+        }
+        else if(e.target.value==900){
+            Seturl(`https://indigo-crane-robe.cyclic.app/kurtaData?price=900`)
+        }
+    }
+
 
   return (
     <div>
@@ -101,21 +145,21 @@ const Kurta = () => {
                 <div style={{padding:"3px", fontSize:"13px", marginBottom:"20px"}}>
                     <p style={{ fontWeight:"bold", display:"inline"}}>RATING</p>
                     <select onChange={HandleRating}>
-                        <option value="5">5</option>
-                        <option value="4">4</option>
-                        <option value="3">3</option>
-                        <option value="2">2</option>
-                        <option value="1">1</option>
+                        <option value="5">5 and above</option>
+                        <option value="4">4 and above</option>
+                        <option value="3">3 and above</option>
+                        <option value="2">2 and above</option>
+                        <option value="1">1 and above</option>
                     </select>
                 </div>
                 <div style={{padding:"3px", fontSize:"13px", marginBottom:"20px"}}>
                     <p style={{fontWeight:"bold", display:"inline"}}>DISCOUNT RANGE</p>
                     <select onChange={HandleDiscount}>
-                        <option>20% and above</option>
-                        <option>40% and above</option>
-                        <option>60% and above</option>
-                        <option>80% and above</option>
-                        <option>90% and above</option>
+                        <option value="20">20% and above</option>
+                        <option value="40">40% and above</option>
+                        <option value="60">60% and above</option>
+                        <option value="80">80% and above</option>
+                        <option value="90">90% and above</option>
                     </select>
                 </div>
                 <div style={{ padding:"3px", fontSize:"13px", marginBottom:"20px"}}>
@@ -131,11 +175,11 @@ const Kurta = () => {
                 <div style={{ padding:"3px", fontSize:"13px", marginBottom:"20px"}}>
                     <p style={{fontWeight:"bold", display:"inline"}}>PRICE RANGE</p>
                     <select onChange={HandlePrice}>
-                        <option>500 and above</option>
-                        <option>600 and above</option>
-                        <option>700 and above</option>
-                        <option>800 and above</option>
-                        <option>900 and above</option>
+                        <option value='500'>500 and above</option>
+                        <option value='600'>600 and above</option>
+                        <option value='700'>700 and above</option>
+                        <option value='800'>800 and above</option>
+                        <option value='900'>900 and above</option>
                     </select>
                 </div>
             </div>
@@ -143,7 +187,7 @@ const Kurta = () => {
             <div style={{ width:"80%", display:"grid", gridTemplateColumns:"repeat(4, 1fr)", gap:"5px"}}>
                 {Kurtas.map((item)=>
                     <Link to={`/kurta/${item.id}`} key={item.id} style={{textAlign:"left", fontSize:"15px"}}>
-                        <img style={{width:"150px", height:"200px"}} src={item.image} alt="image" />
+                        <img style={{width:"150px", height:"200px"}} src={item.image} alt="kurta" />
                         <p style={{display:"inline"}}>{item.rating} </p><StarIcon style={{color:"darkgreen"}}/>
                         <p style={{fontWeight:"bold", fontSize:"11px"}}>{item.name}</p>
                         <p>{item.material}</p>

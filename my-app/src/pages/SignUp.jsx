@@ -14,54 +14,50 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
-  import { AuthContext } from '../Contexts/AuthContext'; 
+  import { AuthContext } from '../Contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
   
+
   
   
-  export default function Login() {
+  
+  export default function SignUp() {
 
-    // const Neededemail="abcd@gmail.com"
-    // const Neededpw="abcd"
 
-  const{SetisAuth, users, SetUsers} = useContext(AuthContext)
-  const navigate = useNavigate()
+    const{users, SetUsers} = useContext(AuthContext)
+    // users, SetUsers
+    const navigate = useNavigate()
+    console.log(users)
 
   const [userEmail, SetuserEmail] = useState("")
   const [userPassword, SetPassword] = useState("")
+
+
  
 
-  const HandleSignIn =()=>{
-    // console.log(userEmail, userPassword)
-
-    let flag = false
+  const HandleSignUp =()=>{
+        let flag = false
         for(let i=0; i<users.length; i++){
             if(users[i]['userEmail']==userEmail && users[i]['userPassword']==userPassword){
                 flag = true
-                SetisAuth(true)
-                alert('Login Successful')
+                alert("User already exists, please Login")
+                navigate("/login")
                 break;
             }
         }
 
         if(flag==false){
-          if(userEmail=="" || userPassword==""){
-            alert('Invalid Credentials')
-          }
-          else{
-              alert('User not found, please SignUp')
-              navigate("/signup")
-          }
-        }
-
-    // if(userEmail===Neededemail && userPassword===Neededpw){
-    //     SetisAuth(true)
-    //     alert('Login Successful')
-    // }
-    // else{
-    //     alert('Invalid Credentials')
-    // }
-  }
+            if(userEmail!=="" && userPassword==""){
+                alert("Please fill all the details")
+            }
+            else{
+                let obj={userEmail, userPassword}
+                SetUsers([...users, obj])
+                alert("SignUp Successfull, please Login")
+                navigate("/login")
+            }
+        } 
+    }
 
     return (
       <Flex
@@ -71,7 +67,7 @@ import { useNavigate } from 'react-router-dom';
         bg={useColorModeValue('gray.50', 'gray.800')}>
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
-            <Heading fontSize={'4xl'}>Sign in to your account</Heading>
+            <Heading fontSize={'4xl'}>Sign Up</Heading>
             <Text fontSize={'lg'} color={'gray.600'}>
               to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
             </Text>
@@ -91,14 +87,17 @@ import { useNavigate } from 'react-router-dom';
                 <Input onChange={(e)=>SetPassword(e.target.value)} type="password" />
               </FormControl>
               <Stack spacing={10}>
-                <Button onClick={()=>HandleSignIn()}
+                <Button onClick={()=>HandleSignUp()}
                   bg={'blue.400'}
                   color={'white'}
                   _hover={{
                     bg: 'blue.500',
                   }}>
-                  Sign in
+                  Sign Up
                 </Button>
+                <Text fontSize={'lg'} color={'gray.600'}>
+                    Already have an account? <Link color={'blue.400'} onClick={()=>navigate("/login")}>Log in</Link> 
+                </Text>
               </Stack>
             </Stack>
           </Box>

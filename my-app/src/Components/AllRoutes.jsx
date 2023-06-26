@@ -11,6 +11,7 @@ import Wishlist from "../pages/Wishlist";
 import Women from "../pages/Women";
 import Kurta from "../pages/Kurta";
 import OneKurta from "../pages/OneKurta";
+import SignUp from "../pages/SignUp";
 import Login from "../pages/Login";
 import NotFound from "../pages/NotFound";
 import AdminPage from "../pages/AdminPage";
@@ -28,6 +29,7 @@ const AllRoutes = () => {
         <Route path='/studio' element={<Studio />}></Route>
         <Route path='/wishlist' element={<Wishlist />}></Route>
         <Route path='/women' element={<Women />}></Route>
+        <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/kurta' element={<Kurta />}></Route>
         <Route path='/kurta/:id' element={<OneKurta />}></Route> 

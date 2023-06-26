@@ -41,7 +41,7 @@ const AdminPage = () => {
 
     useEffect(()=>{
         FetchData()
-    },[])
+    },[FetchData])
 
 
    const DeleteKurta = (id)=>{

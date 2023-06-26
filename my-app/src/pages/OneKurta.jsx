@@ -16,7 +16,7 @@ const OneKurta = () => {
         axios.get(`https://indigo-crane-robe.cyclic.app/kurtaData/${id}`)
         .then((res)=>SetdataObj(res.data))
         .catch((err)=>console.log(err))
-    },[])
+    },[id])
 
     const FuncPlaceOrder=(id)=>{
         let status = 0

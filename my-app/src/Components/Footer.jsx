@@ -42,17 +42,17 @@ const Footer = () => {
                 </div><br />
                 <p style={{fontSize:"10px", fontWeight:"bold", textAlign:"left"}}>KEEP IN TOUCH</p>
                 <div style={{display:"flex", justifyContent:"space-between", width:"60%"}}>
-                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png" alt="image" />
-                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png" alt="image" />
-                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png" alt="image" />
-                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png" alt="image" />
+                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png" alt="fb" />
+                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png" alt="twitter" />
+                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png" alt="yt" />
+                    <img style={{width:"15px", height:"15px"}} src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png" alt="insta" />
                 </div>
             </div>
             <div style={{textAlign:"left"}}>
-                <img style={{width:"30px", height:"30px", display:"inline"}} src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="image" />
+                <img style={{width:"30px", height:"30px", display:"inline"}} src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="original" />
                 <p style={{textAlign:"left", fontSize:"10px", color:"grey", fontWeight:"bold", display:"inline"}}>100% ORIGINAL</p>  <p style={{textAlign:"left", fontSize:"10px", color:"grey", display:"inline"}}>guarantee for all products at myntra.com</p>
                 <br />
-                <img style={{width:"30px", height:"30px", display:"inline"}} src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png" alt="image" />
+                <img style={{width:"30px", height:"30px", display:"inline"}} src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png" alt="thirty" />
                 <p style={{textAlign:"left", fontSize:"10px", color:"grey", fontWeight:"bold", display:"inline"}}>Return within 30days</p>  <p style={{textAlign:"left", fontSize:"10px", color:"grey", display:"inline"}}>of receiving your order</p>
             </div>
         </div><br/>

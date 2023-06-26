@@ -10,7 +10,7 @@ const Kurta = () => {
 
     const [Loading, SetLoading] = useState(false)
     const {Kurtas, SetKurtas} = useContext(AuthContext)
-    const [SortWay, SetSortWay ]=useState("")
+    const [SortWay, SetSortWay]=useState("")
     const [url, Seturl] = useState(`https://indigo-crane-robe.cyclic.app/kurtaData`)
     //const [Kurtas, SetKurtas] = useState([])
 
@@ -54,7 +54,7 @@ const Kurta = () => {
     <div>
         <div style={{display:"flex"}}>
             <div style={{ width:"20%", fontWeight:"bold"}}>
-                <div style={{ width:"90%",display:"flex",display:"flex", justifyContent:"space-between", fontSize:"15px"}}>
+                <div style={{ width:"90%",display:"flex", justifyContent:"space-between", fontSize:"15px"}}>
                     <p >FILTERS</p><p style={{ color:"#EC407A"}}>CLEAR ALL</p>
                 </div>
             </div>

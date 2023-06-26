@@ -83,7 +83,7 @@ useEffect(()=>{
         {Images.map((item)=> {
           return(
             <div key = {item.id} >
-              { item.id === current && (<img src={item.imgLink} />)}
+              { item.id === current && (<img src={item.imgLink} alt='slider'/>)}
             </div>
           )
         })}
@@ -91,7 +91,7 @@ useEffect(()=>{
 
       <h3 style={{textAlign:"left", fontWeight:"bold", marginLeft:"15px", marginRight:"15px", marginTop:"30px",  marginBottom:"30px"}}>TOP PICKS</h3>
       <div style={{display:"flex"}}>
-        {Picks.map((item)=>{return(Loading?<h2 key={item.id}>Loading...</h2>:<div key={item.id} ><img  src={item.image}/></div>)})}
+        {Picks.map((item)=>{return(Loading?<h2 key={item.id}>Loading...</h2>:<div key={item.id} ><img  src={item.image} img='picks'/></div>)})}
       </div>
 
       <h3 style={{textAlign:"left", fontWeight:"bold", marginLeft:"15px", marginRight:"15px", marginTop:"30px",  marginBottom:"30px"}}>CATEGORIES TO BAG</h3>

@@ -1,6 +1,5 @@
 import React from 'react'
-import { useState, useContext } from 'react'
-import { useEffect } from 'react'
+import { useContext } from 'react'
 import { AuthContext } from '../Contexts/AuthContext'
 import { useNavigate  } from 'react-router-dom'
 

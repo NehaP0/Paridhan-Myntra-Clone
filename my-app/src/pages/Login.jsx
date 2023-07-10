@@ -29,10 +29,10 @@ import { useNavigate } from 'react-router-dom';
 
   const [userEmail, SetuserEmail] = useState("")
   const [userPassword, SetPassword] = useState("")
+  console.log(users)
  
 
   const HandleSignIn =()=>{
-    // console.log(userEmail, userPassword)
 
     let flag = false
         for(let i=0; i<users.length; i++){

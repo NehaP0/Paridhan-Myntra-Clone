@@ -16,6 +16,8 @@ import {
   } from '@chakra-ui/react';
   import { AuthContext } from '../Contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
   
 
   
@@ -51,7 +53,7 @@ import { useNavigate } from 'react-router-dom';
                 alert("Please fill all the details")
             }
             else{
-                let obj={userEmail, userPassword}
+                let obj={userEmail, userPassword}  
                 SetUsers([...users, obj])
                 alert("SignUp Successfull, please Login")
                 navigate("/login")

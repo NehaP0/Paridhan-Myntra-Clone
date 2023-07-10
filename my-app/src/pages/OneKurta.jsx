@@ -9,7 +9,7 @@ const OneKurta = () => {
 
     const[dataObj, SetdataObj] = useState({})
     let {id} = useParams() 
-    const{AddtoCart, SetAddtoCart} = useContext(AuthContext)
+    const{AddtoCart, SetAddtoCart, isAuth} = useContext(AuthContext)
    
 
     useEffect(()=>{
@@ -19,18 +19,23 @@ const OneKurta = () => {
     },[id])
 
     const FuncPlaceOrder=(id)=>{
-        let status = 0
-        for(let i=0; i<AddtoCart.length; i++){
-            //console.log(AddtoCart[i].id)
-            if(AddtoCart[i].id===id){
-                status = 1 
-                alert('Product already in bag')              
-                break;
+        if(isAuth){
+            let status = 0
+            for(let i=0; i<AddtoCart.length; i++){
+                //console.log(AddtoCart[i].id)
+                if(AddtoCart[i].id===id){
+                    status = 1 
+                    alert('Product already in bag')              
+                    break;
+                }
+            }
+             if(status===0){
+                    SetAddtoCart([...AddtoCart, dataObj])
+                    alert('Product added to bag')
             }
         }
-         if(status===0){
-                SetAddtoCart([...AddtoCart, dataObj])
-                alert('Product added to bag')
+        else{
+            alert("Please Login first.")
         }
         
         // SetAddtoCart([...AddtoCart, dataObj])

@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../Contexts/AuthContext'
 import { useContext } from 'react'
 import logo from './logo.png'
+import bag from './bag.png'
+
 
 
 
@@ -13,7 +15,9 @@ import logo from './logo.png'
 const Navbar = () => {
 
   const navigate =  useNavigate()
-  const {isAuth, SetisAuth} = useContext(AuthContext)
+  const {isAuth, SetisAuth, AddtoCart} = useContext(AuthContext)
+
+  console.log(AddtoCart.length)
 
   const HandleChange = (e)=>{
     if(e.target.value === "LoginAsUser"){
@@ -44,7 +48,7 @@ const Navbar = () => {
           <option value="LoginAsAdmin">Login As Admin</option>
         </select>
         <RouterLink  to='/wishlist'>Wishlist</RouterLink>
-        <RouterLink to='/bag'>Bag</RouterLink>  
+        <RouterLink to='/bag'><p style={{display:"inline", color:"#EC407A"}}>{AddtoCart.length}</p> <img style={{height:"30px", width:"30px", display:"inline"}} src={bag} alt="bag" /></RouterLink>  
         {(isAuth)?<button onClick={()=>HandleLogout()} style={{backgroundColor:"#EC407A", color:"white",  fontWeight:"bold", borderRadius:"2px"}}>LOGOUT</button>:""}      
     </Flex>
   )

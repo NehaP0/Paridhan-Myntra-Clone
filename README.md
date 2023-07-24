@@ -42,7 +42,7 @@ To get started with the project, you will need to clone the repository to your P
 - Sort by Price.
 - Add to Cart.
 
-# Deployed Link :- [https://dapper-syrniki-3ec5c0.netlify.app/](https://dapper-syrniki-3ec5c0.netlify.app/)
+# Deployed Link :- [[https://dapper-syrniki-3ec5c0.netlify.app/](https://dapper-syrniki-3ec5c0.netlify.app/](https://64ac035380902c1961574e29--hilarious-beijinho-a24b71.netlify.app/))
 
 # screenshot
 
